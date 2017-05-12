@@ -33,6 +33,8 @@ $(function(){
   $("#order-form").submit(function(event) {
     event.preventDefault();
 
+    var selectedPizzaSize = $("select#pizza-size").val();
+    var newOrder = new Pizza(selectedPizzaSize);
 
 
 
