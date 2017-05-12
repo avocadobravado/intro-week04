@@ -8,10 +8,10 @@
     integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
     crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
-    <title>Pizza Store</title>
+    <title>Deep Dish 9</title>
   </head>
   <body>
-    <h1>Pizza Order</h1>
+    <h1>Deep Dish 9</h1>
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -23,53 +23,49 @@
             </div>
             <div class="form-group">
               <label for="address">Address</label>
-              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Where do you live?" required>
+              <input type="text" class="form-control" id="address" placeholder="Where do you live?" required>
             </div>
             <div class="form-group">
               <label for="pizza-size">Pizza Size</label>
               <select class="form-control" id="pizza-size">
-                <option>Small</option>
-                <option>Medium</option>
-                <option>Large</option>
+                <option value="Small">Small</option>
+                <option value="Medium">Medium</option>
+                <option value="Large">Large</option>
               </select>
             </div><!--Pizza size close-->
             <div class="form-check">
               <label class="checkbox-inline">
-                <input type="checkbox" class="form-check-input">
-                Topping
+                <input type="checkbox" class="form-check-input" value="cheese" name="selected-topping">
+                Earth Cheese
               </label>
               <label class="checkbox-inline">
-                <input type="checkbox" class="form-check-input">
-                Topping
+                <input type="checkbox" class="form-check-input" value="targ" name="selected-topping">
+                Targ
               </label>
               <label class="checkbox-inline">
-                <input type="checkbox" class="form-check-input">
-                Topping
+                <input type="checkbox" class="form-check-input" value="yamok" name="selected-topping">
+                Yamok Sauce
               </label>
               <label class="checkbox-inline">
-                <input type="checkbox" class="form-check-input">
-                Topping
+                <input type="checkbox" class="form-check-input" value="bacon" name="selected-topping">
+                Bacon
               </label>
               <label class="checkbox-inline">
-                <input type="checkbox" class="form-check-input">
-                Topping
-              </label>
-              <label class="checkbox-inline">
-                <input type="checkbox" class="form-check-input">
-                Topping
+                <input type="checkbox" class="form-check-input" value="grub" name="selected-topping">
+                Tube Grubs
               </label>
             </div><!--Checkbox close-->
             <div class="form-group">
               <label for="beverage">Beverage</label>
               <select class="form-control" id="beverage">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
+                <option value="Raktajino">Raktajino</option>
+                <option value="Bloodwine">Bloodwine</option>
+                <option value="Romulan Ale">Romulan Ale</option>
+                <option value="Slug-o-Cola">Slug-o-Cola</option>
+                <option value="None">None</option>
               </select>
             </div><!--Beverage close-->
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary">Make it so!</button>
           </form>
         </div><!--Col closes-->
       </div><!--Row closes-->
