@@ -19,9 +19,9 @@ function Customer(name, address) {
 Pizza.prototype.calcPrice = function() {
   var total = 12;
   // Calculate based on size of pizza
-  if (this.size === "Large") {
+  if (this.size === "large") {
     total += 8;
-  } else if (this.size === "Medium") {
+  } else if (this.size === "medium") {
     total += 5;
   } else {
     total += 3;
@@ -36,8 +36,8 @@ Pizza.prototype.calcPrice = function() {
   } else {
     total += 0;
   }
-  if (this.beverage === "None") {
-    total += 0;
+  if (this.beverage === "Risa") {
+    total += 3;
   } else {
     total += 5;
   }
@@ -46,11 +46,11 @@ Pizza.prototype.calcPrice = function() {
 
 // Prototype method to display pizza information
 Pizza.prototype.displayPizza = function() {
-  return "You have chosen a " + this.size + " pizza." + " and " + this.beverage + ".";
+  return "You have chosen a " + "<strong>" + this.size + " </strong>" + "pizza with " + "<strong>" + this.topping.join(", ") + "</strong> and " + "a <strong> " + this.beverage + "</strong>.";
 }
 // Prototype method to display customer's order details
 Customer.prototype.orderDetails = function() {
-  return "Thanks for placing your order, " + this.name + " We will deliver your order to: " + this.address + " as soon as Rom can get there.";
+  return "We will deliver your order to " + "<strong>" + this.address + " </strong>" + " as soon as Rom can get there.";
 }
 
 /////////////////////
@@ -73,13 +73,10 @@ $(function(){
     var newOrder = new Pizza(selectedPizzaSize, selectedToppings, selectedBeverage);
     var newCustomer = new Customer(inputtedName, inputtedAddress);
 
-    
-
-
-    console.log(newOrder);
-    console.log(newCustomer);
-    console.log(newOrder.calcPrice());
-
+    $("#order-form").fadeOut(120);
+    $("#order-display").fadeIn(2000);
+    $("#order-info").html(newOrder.displayPizza() +
+    "<br>" + "Your pizza will cost <strong>" + newOrder.calcPrice() + "</strong> strips of Latinum." + "<br>" + newCustomer.orderDetails());
 
   });
 });

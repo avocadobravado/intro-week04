@@ -11,16 +11,25 @@
     <title>Deep Dish 9</title>
   </head>
   <body>
-    <h1>Deep Dish 9</h1>
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-8">
+          <h1 id="title">Deep Dish 9</h1>
+        </div>
+        <div class="col-md-4">
+          <h3 id="subtitle">Fastest delivery in the Alpha Quadrant!</h3>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="content">
+      <div class="row">
+        <div class="col-md-12" id="form-display">
           <form id="order-form">
             <div class="form-group">
               <label for="name">Name</label>
               <input type="text" class="form-control" id="name" placeholder="Enter your name">
               <small id="name" class="form-text text-muted">We'll never share your unusual tastes with anyone else... for a price.</small>
-            </div>
+            </div><!--Name closes-->
             <div class="form-group">
               <label for="address">Address</label>
               <input type="text" class="form-control" id="address" placeholder="Where do you live?">
@@ -28,9 +37,9 @@
             <div class="form-group">
               <label for="pizza-size">Pizza Size</label>
               <select class="form-control" id="pizza-size">
-                <option value="Small" id="small">Small</option>
-                <option value="Medium" id="medium">Medium</option>
-                <option value="Large" id="large">Large</option>
+                <option value="small" id="small">Small</option>
+                <option value="medium" id="medium">Medium</option>
+                <option value="large" id="large">Large</option>
               </select>
             </div><!--Pizza size close-->
             <div class="form-group">
@@ -62,12 +71,16 @@
                 <option value="Bloodwine">Bloodwine</option>
                 <option value="Romulan Ale">Romulan Ale</option>
                 <option value="Slug-o-Cola">Slug-o-Cola</option>
-                <option value="None">None</option>
+                <option value="Water">Risa Spring Water</option>
               </select>
             </div><!--Beverage close-->
             <button type="submit" class="btn btn-primary">Make it so!</button>
-          </form>
+          </form><!--Form close-->
         </div><!--Col closes-->
+        <div class="col-md-12" id="order-display">
+          <h1>Thanks for your order!</h1>
+          <p id="order-info"></p>
+        </div>
       </div><!--Row closes-->
     </div><!--Container closes-->
   </body>

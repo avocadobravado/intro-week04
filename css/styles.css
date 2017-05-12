@@ -1,0 +1,62 @@
+/*Global*/
+body {
+  background: url("../img/background.png")no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /*background-color: #1B2734;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background: -webkit-gradient(center center, 0, center center, 300, from(#1B2734), to(#090A0E));
+  background: -webkit-radial-gradient(circle, #1B2734, #090A0E);
+  background: -moz-radial-gradient(circle, #1B2734, #090A0E);
+  background: -ms-radial-gradient(circle, #1B2734, #090A0E);*/
+}
+
+@font-face {
+    font-family: "Federation";
+    src: url("../font/DS9_title.ttf");
+}
+
+@font-face {
+    font-family: "Trek";
+    src: url("../font/DS9_credits.ttf");
+}
+
+.container {
+  width: 80%;
+}
+/*Title*/
+
+#title {
+  margin-bottom: 1%;
+  color: #efb200;
+  font-size: 4em;
+  font-family: "Federation";
+  letter-spacing: 0.1em;
+  text-align: left;
+}
+
+#subtitle {
+  margin-top: 10%;
+  font-family: "Trek";
+  font-size: 1.3em;
+  color: #efb200;
+  text-align: right;
+}
+
+#content {
+  background: rgba(255,255,255,.95);
+  margin-top: 1%;
+  padding: 2%;
+}
+
+
+
+
+
+/*Order Display Div*/
+#order-display {
+  display: none;
+}
