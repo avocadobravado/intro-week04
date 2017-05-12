@@ -73,7 +73,9 @@ $(function(){
     var newOrder = new Pizza(selectedPizzaSize, selectedToppings, selectedBeverage);
     var newCustomer = new Customer(inputtedName, inputtedAddress);
 
-    $("#order-form").fadeOut(120);
+    $("#welcome").fadeOut(120);
+    $("#form-display").fadeOut(120);
+    $("#copyright").fadeOut(120);
     $("#order-display").fadeIn(2000);
     $("#order-info").html(newOrder.displayPizza() +
     "<br>" + "Your pizza will cost <strong>" + newOrder.calcPrice() + "</strong> strips of Latinum. Please provide exact amount on delivery, as Rom does not carry change." + "<br>" + newCustomer.orderDetails());
