@@ -76,7 +76,7 @@ $(function(){
     $("#order-form").fadeOut(120);
     $("#order-display").fadeIn(2000);
     $("#order-info").html(newOrder.displayPizza() +
-    "<br>" + "Your pizza will cost <strong>" + newOrder.calcPrice() + "</strong> strips of Latinum." + "<br>" + newCustomer.orderDetails());
+    "<br>" + "Your pizza will cost <strong>" + newOrder.calcPrice() + "</strong> strips of Latinum. Please provide exact amount on delivery, as Rom does not carry change." + "<br>" + newCustomer.orderDetails());
 
   });
 });

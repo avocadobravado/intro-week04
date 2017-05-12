@@ -2,6 +2,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Droid+Sans" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" media="screen" title="no title">
     <script
     src="https://code.jquery.com/jquery-3.2.1.js"
@@ -11,24 +12,38 @@
     <title>Deep Dish 9</title>
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8">
-          <h1 id="title">Deep Dish 9</h1>
-        </div>
-        <div class="col-md-4">
-          <h3 id="subtitle">Fastest delivery in the Alpha Quadrant!</h3>
-        </div>
+    <!-- Navbar -->
+    <nav class="navbar">
+    <div class="container-fluid">
+      <!-- Navbar brand -->
+      <div class="navbar-header">
+        <a href="#" class="navbar-brand">Deep Dish 9</a>
       </div>
-    </div>
-    <div class="container" id="content">
+      <!-- Right side of navbar -->
+        <span class="nav navbar-nav navbar-right">
+          <p><em>Fastest delivery in the Alpha Quadrant!</em></p>
+        </span>
+      </div> <!--Container close -->
+    </nav>
+    <div class="container" id="main-content">
       <div class="row">
+        <div class="welcome">
+          <div class="col-md-4" id="left-welcome">
+            <img src="img/quark.png" id="quark">
+          </div><!--Col close-->
+          <div class="col-md-8" id="right-welcome">
+            <h2>Welcome</h2>
+            <p>We're so glad to have you join us for your next meal. Our pizza is inspired by our dear Moogie's recipes! All of our pizzas are made with our own holo-crafted dough. Unlike Dominion's Pizza, we source the freshest and finest ingredients from Bajor and Risa.</p>
+          </div><!--Col close-->
+        </div><!--Welcome closes-->
         <div class="col-md-12" id="form-display">
+          <h2>Place Your Order</h2>
+          <hr>
           <form id="order-form">
             <div class="form-group">
               <label for="name">Name</label>
-              <input type="text" class="form-control" id="name" placeholder="Enter your name">
-              <small id="name" class="form-text text-muted">We'll never share your unusual tastes with anyone else... for a price.</small>
+              <input type="text" class="form-control" id="name" placeholder="Who's ordering?">
+              <small id="name" class="form-text text-muted">We'll never share your unusual tastes with anyone... for a price.</small>
             </div><!--Name closes-->
             <div class="form-group">
               <label for="address">Address</label>
@@ -42,7 +57,7 @@
                 <option value="large" id="large">Large</option>
               </select>
             </div><!--Pizza size close-->
-            <div class="form-group">
+            <div class="form-group" id="toppings">
               <label for="selected-topping" class="checkbox-inline">
                 <input type="checkbox" value="cheese" name="selected-topping">
                 Earth Cheese
@@ -71,7 +86,7 @@
                 <option value="Bloodwine">Bloodwine</option>
                 <option value="Romulan Ale">Romulan Ale</option>
                 <option value="Slug-o-Cola">Slug-o-Cola</option>
-                <option value="Water">Risa Spring Water</option>
+                <option value="Risa Spring Water">Risa Spring Water</option>
               </select>
             </div><!--Beverage close-->
             <button type="submit" class="btn btn-primary">Make it so!</button>
