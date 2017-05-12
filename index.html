@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title">
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <title>Pizza Store</title>
+  </head>
+  <body>
+    <h1>Pizza Order</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter your name">
+              <small id="name" class="form-text text-muted">We'll never share your unusual tastes with anyone else... for a price.</small>
+            </div>
+            <div class="form-group">
+              <label for="address">Address</label>
+              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Where do you live?">
+            </div>
+            <div class="form-group">
+              <label for="pizza-size">Pizza Size</label>
+              <select class="form-control" id="pizza-size">
+                <option>Small</option>
+                <option>Medium</option>
+                <option>Large</option>
+              </select>
+            </div><!--Pizza size close-->
+            <div class="form-group">
+              <label for="beverage">Beverage</label>
+              <select class="form-control" id="beverage">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div><!--Beverage close-->
+            <div class="form-check">
+              <label class="checkbox-inline">
+                <input type="checkbox" class="form-check-input">
+                Topping
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" class="form-check-input">
+                Topping
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" class="form-check-input">
+                Topping
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" class="form-check-input">
+                Topping
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" class="form-check-input">
+                Topping
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" class="form-check-input">
+                Topping
+              </label>
+            </div><!--Checkbox close-->
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div><!--Col closes-->
+      </div><!--Row closes-->
+    </div><!--Container closes-->
+  </body>
+</html>
