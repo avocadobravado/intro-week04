@@ -19,6 +19,15 @@ body {
   border-radius: 2%;
 }
 
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  font-weight: bold;
+  font-size: 1.7em;
+  font-family: 'Droid Sans', sans-serif;
+}
+
 /*Navbar*/
 
 .navbar {
@@ -64,20 +73,11 @@ body {
 /*Main content*/
 
 #quark {
-  width: 200px;
+  width: 225px;
   border-radius: 100%;
   border: 10px solid #efb200;
   display: block;
   margin: auto;
-}
-
-h2 {
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: .04em;
-  font-weight: bold;
-  font-size: 1.7em;
-  font-family: 'Droid Sans', sans-serif;
 }
 
 #main-content {
@@ -107,6 +107,10 @@ label {
   font-family: 'Droid Serif', sans-serif;
   text-transform: none;
   letter-spacing: 0.02em;
+}
+
+#toppings {
+  text-align: center;
 }
 
 .btn {
