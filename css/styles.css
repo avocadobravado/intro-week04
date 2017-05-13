@@ -9,9 +9,18 @@ body {
   font-size: 1.8em;
 }
 
-@font-face {
+/*@font-face {
     font-family: 'Federation';
-    src: url('/font/DS9_title.ttf');
+    src: url('../font/DS9_Title.ttf');
+}*/
+
+@font-face {
+    font-family: 'federationds9titleregular';
+    src: url('..font/ds9_title-webfont.woff2') format('woff2'),
+         url('..font/ds9_title-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 .container {
@@ -44,7 +53,7 @@ h2 {
 }
 
 .navbar-brand {
-  font-family: 'Federation', serif;
+  font-family: 'federationds9titleregular', serif;
   text-transform: uppercase;
   font-size: 3em;
   letter-spacing: 0.08em;
