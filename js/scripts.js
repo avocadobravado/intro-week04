@@ -50,7 +50,7 @@ Pizza.prototype.displayPizza = function() {
 }
 // Prototype method to display customer's order details
 Customer.prototype.orderDetails = function() {
-  return "We will deliver your order to " + "<strong>" + this.address + " </strong>" + " as soon as Rom can get there.";
+  return "We will deliver your order to " + "<strong>" + this.address + " </strong>" + " as soon as Rom can get there. We appreciate your business, " + "<strong>" + this.name + "</strong>" + ".";
 }
 
 /////////////////////
