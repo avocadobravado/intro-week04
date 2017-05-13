@@ -11,7 +11,8 @@ body {
 
 @font-face {
     font-family: "Federation";
-    src: url("../font/DS9_title.ttf");
+    text-transform: uppercase;
+    src: url('/font/DS9_title.ttf');
 }
 
 .container {
