@@ -1,4 +1,5 @@
 /*Global*/
+
 body {
   background: url("../img/background.png") no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -8,11 +9,6 @@ body {
   font-family: 'Droid Serif', serif;
   font-size: 1.8em;
 }
-
-/*@font-face {
-    font-family: 'Federation';
-    src: url('../font/DS9_Title.ttf');
-}*/
 
 @font-face {
     font-family: 'federationds9titleregular';
@@ -83,7 +79,7 @@ h2 {
 /*Main content*/
 
 #quark {
-  width: 225px;
+  width: 200px;
   border-radius: 100%;
   border: 10px solid #efb200;
   display: block;
@@ -179,7 +175,7 @@ label {
     font-weight: bold;
   }
 }
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 767px) {
   .navbar-right {
     display: none;
   }
