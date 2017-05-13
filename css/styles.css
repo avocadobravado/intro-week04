@@ -49,10 +49,10 @@ h2 {
 }
 
 .navbar-brand {
-  font-family: 'federationds9titleregular', serif;
+  font-family: 'Droid Sans', sans-serif;
   text-transform: uppercase;
   font-size: 3em;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.05em;
   color: #fff;
   text-align: center;
 }
