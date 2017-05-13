@@ -1,4 +1,4 @@
-# _Pizza Ordering Website_
+# _Pizza Shop Website_
 
 #### Week 4 Independent Project - Intro to Programming
 
@@ -6,13 +6,16 @@
 
 ## Description
 
- | Behavior                                       |  Input | Output    |
- | ---------------------------------------------- | ------ | --------- |
- | Numbers divisible by 3 will display "ping"     | 3      | ping      |
- | Numbers divisible by 5 will display "pong"     | 5      | pong      |
- | Numbers divisible by 15 will display "pingpong"| 45     | pingpong  |
- | All other numbers will displayed as is         | 7      | 7         |
- | Negative numbers and letters not recognized    | b      | NaN       |
+A Star Trek Deep Space 9 inspired pizza ordering site.
+
+ | Behavior                                                  |  Input | Output    |
+ | --------------------------------------------------------- | ------ | --------- |
+ | The site allows users to select pizza size                | Medium | "You chose a medium pizza"      |
+ | The site allows users to select pizza topping             | Cheese | "You chose a cheese pizza"      |
+ | The site allows users to select beverage                  | Water  | "You ordered a water"           |
+ | The site will display cost based on the last three specs  | Small pizza, 1 topping, 1 drink | $20    |
+ | The site allows users to input name                       | Garak  | "Thanks, Garak"         |
+ | The site allows users to input address                    | Alpha Quadrant  | "We will deliver your pizza to the Alpha Quadrant" |
 
 ## Setup/Installation Requirements
 
@@ -26,11 +29,12 @@ OR...
 
 ## How to Use
 
-*
+* Open index.html
+* Enter your name, address, and pizza options to order a pizza
 
 ## Known Bugs
 
-*
+* None known at this time, but suggestions and feedback are welcome
 
 ## Support and contact details
 
@@ -50,10 +54,10 @@ OR...
 * Bootstrap
 * Google Fonts
 
-
 ## Acknowledgments
 
-* Credit to 
+* Credit to FreePik for the background image
+* Image of Quark is property of CBS Studios, Inc.
 
 ## License
 
