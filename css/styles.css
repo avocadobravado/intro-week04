@@ -1,4 +1,5 @@
 /*Global*/
+
 body {
   background: url("../img/background.png") no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -10,8 +11,12 @@ body {
 }
 
 @font-face {
-    font-family: "Federation";
-    src: url("../font/DS9_title.ttf");
+    font-family: 'federationds9titleregular';
+    src: url('../font/ds9_title-webfont.woff2') format('woff2'),
+         url('../font/ds9_title-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 .container {
@@ -44,7 +49,8 @@ h2 {
 }
 
 .navbar-brand {
-  font-family: 'Federation', serif;
+  font-family: 'federationds9titleregular', serif;
+  text-transform: uppercase;
   font-size: 3em;
   letter-spacing: 0.08em;
   color: #fff;
@@ -73,7 +79,7 @@ h2 {
 /*Main content*/
 
 #quark {
-  width: 225px;
+  width: 200px;
   border-radius: 100%;
   border: 10px solid #efb200;
   display: block;
@@ -169,7 +175,7 @@ label {
     font-weight: bold;
   }
 }
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 767px) {
   .navbar-right {
     display: none;
   }
