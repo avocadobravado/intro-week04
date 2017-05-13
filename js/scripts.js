@@ -28,19 +28,10 @@ Pizza.prototype.calcPrice = function() {
   }
 
   // Calculate based number of toppings
-  for(var i = 0; i < this.topping.length; i++) {
+  for (var i = 0; i < this.topping.length; i++) {
       total += 2;
     }
 
-  if (this.topping.length === 1) {
-    total += 1;
-  } else if (this.topping.length === 2) {
-    total += 3;
-  } else if (this.topping.length >= 3) {
-    total += 6;
-  } else {
-    total += 0;
-  }
   if (this.beverage === "Risa") {
     total += 3;
   } else {
