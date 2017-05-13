@@ -24,6 +24,7 @@ body {
 .navbar {
   background-color: #efb200;
   border: none;
+  border-radius: 0;
   font-size: 1em;
   color: #fff;
 }
@@ -36,13 +37,22 @@ body {
 .navbar-brand {
   font-family: 'Federation', serif;
   font-size: 3em;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
   color: #fff;
   text-align: center;
 }
 
-a .navbar-brand {
+.navbar-brand a {
   color: #fff;
+}
+
+ a:hover {
+  color: rgba(255, 255, 255, .5);
+  -o-transition:.9s;
+  -ms-transition:.9s;
+  -moz-transition:.9s;
+  -webkit-transition:.9s;
+  transition:.9s;
 }
 
 .navbar-right {
@@ -51,29 +61,14 @@ a .navbar-brand {
   padding-right: 2%;
 }
 
-#title {
-  margin-bottom: 1%;
-  color: #efb200;
-  font-size: 4em;
-  font-family: "Federation";
-  letter-spacing: 0.1em;
-  text-align: left;
-}
-
-#subtitle {
-  margin-top: 10%;
-  font-family: "Trek";
-  font-size: 1.3em;
-  color: #efb200;
-  text-align: right;
-}
-
 /*Main content*/
 
 #quark {
   width: 200px;
   border-radius: 100%;
   border: 10px solid #efb200;
+  display: block;
+  margin: auto;
 }
 
 h2 {
@@ -93,7 +88,7 @@ h2 {
 }
 
 .form-control {
-  width: 70%;
+  width: 75%;
 }
 
 label {
@@ -101,6 +96,11 @@ label {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   font-size: 0.9em;
+}
+
+#small-name {
+  font-size: 0.75em;
+  font-style: italic;
 }
 
 .checkbox-inline {
@@ -142,4 +142,31 @@ label {
 
 .vulcan {
   height: 30px;
+}
+
+/* Media queries */
+
+  /* Shrink container*/
+@media only screen and (min-width: 1024px) {
+  .container {
+    width: 85%;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .container {
+    width: 85%;
+  }
+}
+
+  /*Hide subtitle*/
+
+@media only screen and (min-width: 1024px) {
+  .navbar-right {
+    font-weight: bold;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .navbar-right {
+    display: none;
+  }
 }
