@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="icon" type="image/png" href="img/vulcan.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Droid+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="css/styles.css">
     <script
     src="https://code.jquery.com/jquery-3.2.1.js"
     integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
@@ -17,7 +19,7 @@
     <div class="container-fluid">
       <!-- Navbar brand -->
       <div class="navbar-header">
-        <a href="#" class="navbar-brand">Deep Dish 9</a>
+        <a href="index.html" class="navbar-brand">Deep Dish 9</a>
       </div>
       <!-- Right side of navbar -->
         <span class="nav navbar-nav navbar-right">
@@ -27,7 +29,7 @@
     </nav>
     <div class="container" id="main-content">
       <div class="row">
-        <div id="#hide-upon-order">
+        <div id ="hide-upon-order">
           <div id="welcome">
             <div class="col-md-4 col-sm-12" id="left-welcome">
               <img src="img/quark.png" id="quark">
@@ -41,16 +43,16 @@
             <h2>Place Your Order</h2>
             <hr>
             <form id="order-form">
-              <div class="form-group col-md-offset-2">
+              <div class="form-group col-md-offset-2 col-xs-offset-2">
                 <label for="name">Name</label>
                 <input type="text" class="form-control" id="name" placeholder="Who's ordering?" required>
                 <small id="small-name" class="form-text text-muted">We'll never share your unusual tastes with anyone... for a price.</small>
               </div><!--Name closes-->
-              <div class="form-group col-md-offset-2">
+              <div class="form-group col-md-offset-2 col-xs-offset-2">
                 <label for="address">Address</label>
                 <input type="text" class="form-control" id="address" placeholder="Where do you live?" required>
               </div>
-              <div class="form-group col-md-offset-2">
+              <div class="form-group col-md-offset-2 col-xs-offset-2">
                 <label for="pizza-size">Pizza Size</label>
                 <select class="form-control" id="pizza-size">
                   <option value="small" id="small">Small</option>
@@ -60,7 +62,7 @@
               </div><!--Pizza size close-->
               <div class="form-group" id="toppings">
                 <label for="selected-topping" class="checkbox-inline">
-                  <input type="checkbox" value="cheese" name="selected-topping" checked>
+                  <input type="checkbox" id="test" value="cheese" name="selected-topping" checked>
                   Earth Cheese
                 </label>
                 <label for="selected-topping" class="checkbox-inline">
@@ -80,7 +82,7 @@
                   Tube Grubs
                 </label>
               </div><!--Checkbox close-->
-              <div class="form-group col-md-offset-2">
+              <div class="form-group col-md-offset-2 col-xs-offset-2">
                 <label for="test">Beverage</label>
                 <select class="form-control" id="beverage">
                   <option value="Raktajino">Raktajino</option>
@@ -95,12 +97,12 @@
             <hr>
             <p id="copyright">The Star Trek trademarks, logos, and related names are owned by CBS Studios Inc., and are used under "fair use" guidelines.</p>
           </div><!--Col closes-->
-        </div><!--Hide upon order-->
-        <div class="col-md-12" id="order-display">
-          <h2><img src="img/vulcan.png" class="vulcan"> Thanks for your order! <img src="img/vulcan.png" class="vulcan"></h2>
-          <hr>
-          <p id="order-info"></p>
-        </div>
+        </div><!--Hide upon order closes-->
+          <div class="col-md-12" id="order-display">
+            <h2><img src="img/vulcan.png" class="vulcan"> Thanks for your order! <img src="img/vulcan.png" class="vulcan"></h2>
+            <hr>
+            <p id="order-info"></p>
+          </div>
       </div><!--Row closes-->
     </div><!--Container closes-->
   </body>
